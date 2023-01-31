@@ -1,0 +1,102 @@
+/* Custom Theme CSS */
+
+/* navigation button and social icons */
+header {
+    border: 1px solid lavender;
+}
+
+.btn-text {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-text:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.i-container {
+    background-color: #fff;
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.icon-fb {
+    font-size: 24px;
+    color: blue;
+    margin: 20% 30%;
+}
+
+.icon-tw {
+    font-size: 24px;
+    color: green;
+    margin: 20% 25%;
+}
+
+.icon-wa {
+    font-size: 24px;
+    color: green;
+    margin: 20% 25%;
+}
+
+.icon-yt {
+    font-size: 24px;
+    color: red;
+    margin: 20% 15%;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: #BB2D3B;
+}
+
+.navbar ul li a {
+    color: #fff;
+}
+
+.navbar ul li a:hover {
+    font-weight: bold;
+    color: #fff;
+}
+
+.datetime {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* page index and layout */
+.page-layout {
+    border: 1px solid lavender;
+}
+
+.paper-index {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 400px !important;
+}
+
+.page-box-item {
+    width: 100%;
+    height: 150px;
+    border: 1px solid lavender;
+}
+
+.news-page-content-header a:hover {
+    cursor: zoom-in;
+}
+
+.news-box-row {
+    width: 100%;
+    height: 300px;
+    border: 1px solid lavender;
+}
+
+.news-box-item {
+    border: 1px solid lavender;
+}
