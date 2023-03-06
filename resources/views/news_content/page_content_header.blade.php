@@ -1,5 +1,8 @@
-<div class="news-page-content-header mb-2 d-flex justify-content-center">
-    <a href="#">
-        <img class="img-fluid" src="{{asset('Assets/img/paper-header.jpg')}}" alt="">
-    </a>
+<div class="d-flex news-page-content-header mb-2">
+    <div class="col bg-danger">
+        <a href="#">
+            <img class="" src="{{asset('Assets/img/paper-header.jpg')}}" alt="">
+        </a>
+    </div>
+
 </div>

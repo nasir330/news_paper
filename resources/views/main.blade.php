@@ -23,38 +23,59 @@
             @include('menu.page_menu')
             <!-- page-menu end -->
 
-            <!-- news page content layout start -->
-            <div class="row flex-row">
-                <div class="news-page-content-layout">
-                    <div class="row">
-                        <!-- news page content header start -->
-                        @include('news_content.page_content_header')
-                        <!-- news page content header end -->
+            <!-- news page content header start -->
+            <div class="row">
+                <div class="news-page-content-header d-flex justify-content-center mt-2">
+                    <div class="col">
+                        <a href="#">
+                            <img class="img-fluid" src="{{asset('Assets/img/paper-header.jpg')}}" alt="">
+                        </a>
                     </div>
-                    <!-- news page content body start -->
-                    <div class="row">
-                        <div class="news-page-content-body d-flex">
-                            <div class="row d-flex  news-box-row">
-                                <div class="flex-shrink news-box-item bg-danger">
-
-                                </div>
-                                <div class="flex-shrink news-box-item bg-info">
-
-                                </div>
-                                <div class="flex-shrink news-box-item bg-warning">
-
-                                </div>
-                                <div class="flex-shrink news-box-item bg-primary">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- news page content body end -->
                 </div>
             </div>
-            <!-- news page content layout start -->
+            <!-- news page content header end -->
 
+            <!-- news page content body start -->
+            <div class="row">
+                <!-- 1st row start -->
+                <div class="news-page-content-body d-flex justify-content-center mt-2">
+                    @foreach($firstRow as $key=> $news)
+                    <div class="col">
+                        <a href="#">
+                            <img class="" src="{{asset('')}}{{$news->newsData}}" alt="">
+                        </a>
+                    </div>
+                    @endforeach
+                </div>
+                <!-- 1st row end -->
+            </div>
+            <div class="row">
+                <!-- 2nd row start -->
+                <div class="news-page-content-body d-flex justify-content-center mt-2">
+                    @foreach($secondtRow as $key=> $news)
+                    <div class="col">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img class="" src="{{asset('')}}{{$news->newsData}}" alt="">
+                        </a>
+                    </div>
+                    @endforeach
+                </div>
+                <!-- 2nd row end -->
+            </div>
+            <div class="row">
+                <!-- 3rd row start -->
+                <div class="news-page-content-body d-flex justify-content-center mt-2">
+                    @foreach($thirdRow as $key=> $news)
+                    <div class="col">
+                        <a href="#">
+                            <img class="" src="{{asset('')}}{{$news->newsData}}" alt="">
+                        </a>
+                    </div>
+                    @endforeach
+                </div>
+                <!-- 3rd row end -->
+            </div>
+            <!-- news page content body end -->
         </div>
         <!-- content body end -->
 
@@ -62,5 +83,13 @@
     <!-- main content end -->
 
 
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                   <h1>this is modal menu</h1>
+                </div>
+            </div>
+        </div>
     <!-- theme footer -->
     <x-footer />
